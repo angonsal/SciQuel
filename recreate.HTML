@@ -29,20 +29,34 @@
     }
 
     .article {
-      flex: 0 0 calc(33.33% - 20px);
+      flex: 0 0 calc(25% - 10px);
       position: relative;
       background-color: #f2f2f2;
       padding: 20px;
       border-radius: 8px;
-      margin: 30px;
+      margin: 70px;
+      margin-right: 20px;
+      margin-left: 10px;
+      max-height: 700px;
+      max-width: 200px;
+    }
+
+    .article:last-child {
+      margin-right: 0; 
     }
 
     .article img {
       max-width: 100%; 
+      height: auto; /* Allow the height to adjust proportionally */
       max-height: 200px; 
       border-radius: 8px; 
-      margin-bottom: 10px;
+      margin-bottom: -12px;
+      display: block; /* Ensure the image is treated as a block element */
+      margin-left: auto; /* Center the image horizontally */
+      margin-right: auto; /* Center the image horizontally */
+      margin-top: 10px;
     }
+
 
     /* Adjust the styles for the rectangle */
     svg {
@@ -114,7 +128,8 @@
   <div class="container">
     <div class="article">
       <div class="article-rectangle"></div>
-      <p>Article 1 Content Goes Here</p>
+      <h3>Lights, Camera, Action!</h1>
+      <p> How the Hawaiian bobtail squid brings a creative vision to its maritime world of small </p>
       <img src="squid.webp" alt="Article 1 Image">
     </div>
     <div class="article">
