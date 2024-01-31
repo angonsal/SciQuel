@@ -1,3 +1,8 @@
+
+<!-- Ashley G.   -->
+<!-- Jan.29, 2024   -->
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +11,7 @@
       position: relative;
       display: flex;
       align-items: center;
-      font-family: Futura;
+      font-family: Optima;
       margin-left: 200px;
       margin-right: 100px;
     }
@@ -17,7 +22,6 @@
       z-index: 0; 
     }
 
-    /* Adjust the styles for the image */
     img {
       width: 569px;
       height: 360px;
@@ -29,16 +33,19 @@
     }
 
     .article {
-      flex: 0 0 calc(25% - 10px);
+      flex: 0 0 calc(45% - 10px);
       position: relative;
       background-color: #f2f2f2;
-      padding: 20px;
+      padding-bottom: 20px;
+      padding-top: 12px;
+      padding-left: 10px ;
+      padding-right: 10px ;
       border-radius: 8px;
       margin: 70px;
-      margin-right: 20px;
+      margin-right: 10px;
       margin-left: 10px;
       max-height: 700px;
-      max-width: 200px;
+      max-width: 300px;
     }
 
     .article:last-child {
@@ -47,14 +54,66 @@
 
     .article img {
       max-width: 100%; 
-      height: auto; /* Allow the height to adjust proportionally */
+      height: auto; 
       max-height: 200px; 
       border-radius: 8px; 
       margin-bottom: -12px;
-      display: block; /* Ensure the image is treated as a block element */
-      margin-left: auto; /* Center the image horizontally */
-      margin-right: auto; /* Center the image horizontally */
+      display: block; 
+      margin-left: auto; 
+      margin-right: auto; 
       margin-top: 10px;
+    }
+
+    .article h3 {
+      font-size: 20px; 
+      font-family: Optima;
+      color: #333; 
+      margin-bottom: 10px; 
+    }
+
+    .article p {
+      font-size: 14px; 
+      font-family: Didot;
+      color: #666; 
+      line-height: 1.5; 
+    }
+
+    .article-biology {
+      width: 70px;
+      height: 20px;
+      background-color: orange;
+      border-radius: 5px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      left: 10px;
+    }
+
+    .article-geology {
+      width: 70px;
+      height: 20px;
+      background-color: rgb(2, 48, 32);
+      border-radius: 5px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      left: 10px;
+    }
+
+
+    .article-tag span {
+      color: white;
+      font-size: 12px;
+    }
+
+    .article-rectangle {
+      width: 50px;
+      height: 20px;
+      background-color: orange;
+      border-radius: 5px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
     }
 
 
@@ -74,7 +133,7 @@
       margin-left: 300px;
       width: 65.5%;
       height: 75%;
-      background: linear-gradient(rgba(50,162,168,0.5), rgba(0,204,204,0.5)); /* Adjusted the gradient colors and opacity */
+      background: linear-gradient(rgba(50,162,168,0.5), rgba(0,204,204,0.5)); 
       border-radius: 8px; 
       z-index: 2; 
     }
@@ -92,7 +151,7 @@
       <!-- Gradient Overlay -->
       <div class="gradient-overlay"></div>
 
-      <!-- Add the image below the rectangle -->
+      <!-- Adds the image below the rectangle -->
       <img src="squid.webp" alt="Bobtailsquid">
       <!-- Gradient -->
     <svg width="400" height="220" xmlns="http://www.w3.org/2000/svg">
@@ -110,15 +169,15 @@
   <rect x="20" y="20" width="70" height="20" rx="5" ry="5" fill="orange" />
 
   <!-- Text Elements -->
-  <text x="50" y="70" fill="white" font-size="24" font-family="Arial" font-weight="bold">Lights, Camera, Action!</text>
-  <text x="50" y="100" fill="white" font-size="16" font-family="Arial">How the Hawaiian bobtail squid brings a</text>
-  <text x="50" y="120" fill="white" font-size="16" font-family="Arial">creative vision to its maritime world of small</text>
+  <text x="50" y="70" fill="white" font-size="24" font-family="Optima" font-weight="bold">Lights, Camera, Action!</text>
+  <text x="50" y="100" fill="white" font-size="16" font-family="Optima">How the Hawaiian bobtail squid brings a</text>
+  <text x="50" y="120" fill="white" font-size="16" font-family="Optima">creative vision to its maritime world of small</text>
 
   <!-- Author -->
-  <text x="50" y="190" fill="gray" font-size="10" font-family="Arial" font-weight="bold">By Edward Chen | 05/27/21</text>
+  <text x="50" y="190" fill="gray" font-size="10" font-family="Optima" font-weight="bold">By Edward Chen | 05/27/21</text>
 
   <!-- Caption -->
-  <text x="30" y="35" fill="white" font-size="10" font-family="Arial" font-weight="bold">chemistry</text>
+  <text x="30" y="35" fill="white" font-size="10" font-family="Optima" font-weight="bold">chemistry</text>
 </svg>
 
 
@@ -127,20 +186,22 @@
 
   <div class="container">
     <div class="article">
-      <div class="article-rectangle"></div>
+      <div class="article-biology"></div>
       <h3>Lights, Camera, Action!</h1>
       <p> How the Hawaiian bobtail squid brings a creative vision to its maritime world of small </p>
       <img src="squid.webp" alt="Article 1 Image">
     </div>
     <div class="article">
-      <div class="article-rectangle"></div>
-      <p>Article 2 Content Goes Here</p>
-      <img src="squid.webp" alt="Article 2 Image">
+      <div class="article-geology"></div>
+      <h3>Lights, Camera, Action!</h1>
+      <p> How the Hawaiian bobtail squid brings a creative vision to its maritime world of small </p>
+      <img src="squid.webp" alt="Article 1 Image">
     </div>
     <div class="article">
-      <div class="article-rectangle"></div>
-      <p>Article 3 Content Goes Here</p>
-      <img src="squid.webp" alt="Article 3 Image">
+      <div class="article-biology"></div>
+      <h3>Lights, Camera, Action!</h1>
+      <p> How the Hawaiian bobtail squid brings a creative vision to its maritime world of small </p>
+      <img src="squid.webp" alt="Article 1 Image">
     </div>
   </div>
 
